@@ -16,7 +16,7 @@ const authenticator = (req, res, next) => {
   if (authorization === token) {
     next();
   } else {
-    res.status(403).json({ error: 'User not currently logged in.' });
+    res.status(403).json({ error: 'User not currently logged.' });
   }
 }
 
